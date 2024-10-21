@@ -20,7 +20,7 @@ MICROPY_PY_ESPNOW ?= 1
 MICROPY_PY_BTREE ?= 1
 MICROPY_VFS_LFS2 ?= 1
 
-# Note: Implicitly uses the port manifest.
+FROZEN_MANIFEST ?= $(BOARD_DIR)/manifest_1MiB.py
 
 # Configure mpconfigboard.h.
 CFLAGS += -DMICROPY_ESP8266_1M
